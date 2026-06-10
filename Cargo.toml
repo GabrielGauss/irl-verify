@@ -1,0 +1,18 @@
+[package]
+name = "irl-verify"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "Offline verifier for IRL (Immutable Reasoning Log) proof bundles. No network, no database, no trust in the operator."
+repository = "https://github.com/GabrielGauss/irl-verify"
+keywords = ["audit", "merkle", "opentimestamps", "compliance", "verification"]
+categories = ["cryptography", "command-line-utilities"]
+
+[dependencies]
+anyhow = "1"
+base64 = "0.21"
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
